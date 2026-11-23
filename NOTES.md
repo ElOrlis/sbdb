@@ -98,3 +98,8 @@ B-Tree lookup might require only 3 disk reads instead of 20.
 - Read latency increases for larger nodes.
 
 #### IO in the unit of pages
+
+- Basic unit of disk IO is not bytes, but sectors, which are 512-byte contiguous\
+  blocks
+- The OS caches/buffers disk reads/writes in the page cache, which consists of \
+  4k-byte memory blocks called pages.
